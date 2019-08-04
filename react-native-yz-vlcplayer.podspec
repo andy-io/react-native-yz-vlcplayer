@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.framework           = 'AudioToolbox','VideoToolbox', 'CoreMedia', 'CoreVideo', 'CoreAudio', 'AVFoundation', 'MediaPlayer'
 
   s.dependency          'React'
-  s.dependency          'MobileVLCKit','~> 3.3.1'
+  s.dependency          'MobileVLCKit','~> 3.3'
 
 end
