@@ -16,6 +16,7 @@ import {
   Animated,
   NetInfo,
   Image,
+  SafeAreaView,
   ScrollView
 } from 'react-native';
 
@@ -1813,7 +1814,7 @@ export default class VlCPlayerViewByMethod extends Component {
     }
 
     return (
-      <View
+      <SafeAreaView
         /*onMoveShouldSetResponder={(evt)=>true}
          onStartShouldSetResponder={(evt)=>true}
          onResponderGrant={e=>{
@@ -1896,7 +1897,7 @@ export default class VlCPlayerViewByMethod extends Component {
           </View>
           {this._renderView()}
         </View>
-      </View>
+      </SafeAreaView>
     );
   }
 }
