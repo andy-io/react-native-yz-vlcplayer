@@ -1850,12 +1850,12 @@ export default class VlCPlayerViewByMethod extends Component {
                 onStopped={this._onAdStopped}
                 initOptions={initAdOptions}
                 initType={initAdType}
-                mediaOptions={
-                  {
-                    ':network-caching': 0,
-                    ':live-caching': 1500,
-                  }
-                }
+                // mediaOptions={
+                //   {
+                //     ':network-caching': 0,
+                //     ':live-caching': 1500,
+                //   }
+                // }
               />
             )}
             {showVideo && (
@@ -1882,12 +1882,12 @@ export default class VlCPlayerViewByMethod extends Component {
                 onEnd={this._onEnd}
                 initOptions={initOptions}
                 initType={initType}
-                mediaOptions={
-                  {
-                    ':network-caching': 250,
-                    ':live-caching': 250,
-                  }
-                }
+                // mediaOptions={
+                //   {
+                //     ':network-caching': 250,
+                //     ':live-caching': 250,
+                //   }
+                // }
               />
             )}
             {this._renderLoading()}
