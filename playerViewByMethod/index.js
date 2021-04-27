@@ -811,11 +811,13 @@ export default class VlCPlayerViewByMethod extends Component {
         });
       }
     }else{
-      if(!isLive){
+      if (autoRePlay) {
+        this.reload();
+      } else if(!isLive){
         this.setState({
           isEnding: true,
         });
-      }
+      } 
     }
     onEnd && onEnd({
       currentTime: currentTime/1000,
